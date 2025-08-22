@@ -12,7 +12,7 @@ const HeroSection:React.FC<Props> = ({className}) => {
         muted
         className="absolute top-1/2 left-1/2  w-full h-full max-w-none transform -translate-x-1/2 -translate-y-1/2 object-cover -z-10 border-b-2 border-b-white"
       >
-        <source src="/bgVideo.mp4" type="video/mp4" />
+        {/* <source src="/bgVideo.mp4" type="video/mp4" /> */}
       </video>
       <p className="mt-14 xl:mt-[100px] text-white text-3xl xl:text-7xl font-bold">
         The whole world <p>awaits.</p>
@@ -29,7 +29,7 @@ const HeroSection:React.FC<Props> = ({className}) => {
           <Image src={"./checkOutIcon.svg"}
           alt="checkOutIcon"
          className="h-5 w-5 " width={100} height={ 100}/>
-          <p></p>
+          
          </div>
         <div></div>
         </div>
