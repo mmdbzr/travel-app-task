@@ -36,7 +36,7 @@ const Navbar: React.FC<NavProps> = ({}) => {
             className={cn(
               activeButton === pathname
                 ? "border-b-[1px] text-white "
-                : " text-white"
+                : " text-white",
             )}
             href={"/"}
           >

@@ -10,7 +10,7 @@ const HeroSection: React.FC<Props> = ({ className }) => {
     <div
       className={cn(
         "flex relative flex-col h-[470px] xl:h-screen p-6 xl:px-[132px] xl:pt-11 shadow-custom",
-        className
+        className,
       )}
     >
       <video
@@ -40,7 +40,7 @@ const HeroSection: React.FC<Props> = ({ className }) => {
           />
         </div>
         <div className="flex justify-center items-center w-full xl:w-[360px]  bg-white/40  xl:bg-transparent rounded-4xl h-11">
-          <div className="flex items-center px-8 py-2">
+          <div className="flex items-center px-8 py-2 xl:px-0">
             <Image
               src={"./checkOutIcon.svg"}
               alt="checkOutIcon"
@@ -48,9 +48,9 @@ const HeroSection: React.FC<Props> = ({ className }) => {
               width={100}
               height={100}
             />
-            <p className="ml-2">Check in</p>
+            <p className="ml-2 w-20">Check in</p>
           </div>
-          <div className="flex items-center text-center px-8 xl:px-4 py-[2px] border-l-[1px] xl:border-0 xl:py-0  xl:ml-9 ">
+          <div className="flex items-center text-center  border-l-[1px] xl:border-0 h-6  xl:ml-9 px-8 py-2 xl:px-0 xl:w-40">
             <Image
               src={"./checkOutIcon.svg"}
               alt="checkOutIcon"
@@ -58,10 +58,10 @@ const HeroSection: React.FC<Props> = ({ className }) => {
               width={100}
               height={100}
             />
-            <p className="ml-2 w-[70px]">Check out</p>
+            <p className="ml-2 w-full xl:!w-20">Check out</p>
           </div>
         </div>
-        <div className="flex justify-center items-center w-full  bg-white/40  xl:bg-transparent rounded-4xl h-11">
+        <div className="flex justify-center items-center w-full  bg-white/40  xl:bg-transparent rounded-4xl h-11 xl:mr-5">
           <Image
             src={"./passengerIcon.svg"}
             alt="checkOutIcon"
@@ -69,9 +69,9 @@ const HeroSection: React.FC<Props> = ({ className }) => {
             width={100}
             height={100}
           />
-          <p>1 room, 2 adults</p>
+          <p className="w-32">1 room, 2 adults</p>
         </div>
-        <button className="flex justify-center items-center w-full  bg-[#2659C3] xl:bg-white  rounded-4xl h-11 xl:text-[#2659C3] cursor-pointer">
+        <button className="flex justify-center items-center w-full  bg-[#2659C3] xl:bg-white  rounded-4xl h-11 xl:text-[#2659C3] cursor-pointer ">
           Search
         </button>
       </div>
