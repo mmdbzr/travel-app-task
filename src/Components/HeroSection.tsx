@@ -10,7 +10,7 @@ const HeroSection: React.FC<Props> = ({ className }) => {
     <div
       className={cn(
         "flex relative flex-col h-[470px] xl:h-screen p-6 xl:px-[132px] xl:pt-11 shadow-custom",
-        className,
+        className
       )}
     >
       <video
@@ -58,7 +58,7 @@ const HeroSection: React.FC<Props> = ({ className }) => {
               width={100}
               height={100}
             />
-            <p className="ml-2 w-full xl:!w-20">Check out</p>
+            <p className="ml-2 w-24 xl:!w-20">Check out</p>
           </div>
         </div>
         <div className="flex justify-center items-center w-full  bg-white/40  xl:bg-transparent rounded-4xl h-11 xl:mr-5">
